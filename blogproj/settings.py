@@ -9,6 +9,9 @@ https://docs.djangoproject.com/en/2.2/topics/settings/
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/2.2/ref/settings/
 """
+LOGIN_URL = 'login'
+LOGIN_REDIRECT_URL = 'index'
+AUTH_USER_MODEL = 'users.User'
 
 import os
 
@@ -45,6 +48,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'crispy_forms',
     'mainapp',
+    'users',
 ]
 
 MIDDLEWARE = [
