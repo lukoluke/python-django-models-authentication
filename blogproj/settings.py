@@ -9,9 +9,6 @@ https://docs.djangoproject.com/en/2.2/topics/settings/
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/2.2/ref/settings/
 """
-LOGIN_URL = 'login'
-LOGIN_REDIRECT_URL = 'index'
-AUTH_USER_MODEL = 'users.User'
 
 import os
 
@@ -135,3 +132,7 @@ STATIC_URL = '/static/'
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, "static"),
 ]
+
+LOGIN_URL = 'login'
+LOGIN_REDIRECT_URL = 'index'
+AUTH_USER_MODEL = 'users.User' 
